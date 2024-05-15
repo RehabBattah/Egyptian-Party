@@ -1,0 +1,145 @@
+ /*     G l O B A L    */
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+:root{
+    --mainColor: rgba(214, 46, 51, 0.6);
+}
+/* =============== */
+
+#home{
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    margin-bottom: 6.5rem;
+    /* position: relative; */
+}
+.inner{
+    background-color: var(--mainColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+h1{
+    font-size: 65px;
+ 
+}
+
+#home .pages a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    line-height: 50px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.open-menu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 275px; 
+    background-color: #414658;
+    z-index: 9999;
+
+}
+.pages{
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    bottom: 0;
+    background-color: #414658;
+    width: 275px; 
+}
+#home .pages li:hover a{
+    color: rgba(214, 46, 51, 0.4); 
+}
+.close-btn{
+    position: absolute;
+    top: 0;
+    right: 22px;
+}
+
+.open-menu .open{
+    position: absolute;
+    top: 50%;
+    left:  290px;
+    color: white;
+    /* z-index: 999; */
+    /* height: fit-content; */
+    font-size: 30px;
+    cursor: pointer;
+}
+/* ================================================ */
+
+#singer h4{
+    background-color: var(--mainColor);
+    padding: 10px;
+    margin: 0;
+    color: white;
+    cursor: pointer;
+    
+}
+#singer p{
+    background-color: #ccc;
+    margin: 0;
+    padding: 12px;
+    font-size: 14px;
+    display: none;
+}
+/* ========================================= */
+
+#duration{
+    background-image: url(../img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    width: 100%;
+
+}
+#duration .inn-durtion{
+    background-color: var(--mainColor);
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    height: 100%;
+    width: 100%;
+}
+/* ================================================= */
+#contact h2{
+    font-size: 2.35rem;
+    color: rgb(68, 68, 68);
+}
+#contact p{
+    color: gray;
+}
+#contact .fa-location-dot{
+    margin:2rem 0 0 5rem;
+}
+#contact .fa-envelope ,.fa-phone{
+    margin: 1.5rem 0 .5rem 12rem;
+}
+.fa-bars{
+    cursor: pointer;
+}
+.social i{
+    border: 1px solid gray;
+    padding: .6rem;
+    transition: .4s all;
+}
+.social i:hover {
+    background-color: #D62E33;
+    cursor: pointer;
+    color: white;
+}
+textarea{
+    height: 50%;
+    resize: vertical;
+}
